@@ -70,7 +70,37 @@ body{
   border-color: rgb(192, 192, 192);
   margin-left: -1px;
   margin-right: 10px;
+position: relative;
 
+}
+.search-buttons ,
+.voice-search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   position: relative;
+}
+.search-buttons .tooltip ,
+.voice-search-button .tooltip{
+  font-family: Roboto , Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+ white-space: nowrap;
+}
+.search-buttons:hover .tooltip ,
+.voice-search-button:hover .tooltip  {
+  opacity: 1;
 }
 .search-icons{
   height: 25px;
